@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <!--Criado pot Thiago Pires - thdev@gmail.com-->
+  </head>
+  <body onkeypress="manipularTeclado()">
+    <h1>THX Calculator</h1>
+    <table>
+      <tr>
+        <td colspan="6">
+          <input type="text" name="display" id="display" value="0" disabled />
+        </td>
+      </tr>
+      <td>
+        <input type="button" value="7" onclick="atualizarDisplay(this)" />
+      </td>
+      <td>
+        <input type="button" value="8" onclick="atualizarDisplay(this)" />
+      </td>
+      <td>
+        <input type="button" value="9" onclick="atualizarDisplay(this)" />
+      </td>
+      <td>
+        <input type="button" value="*" onclick="atualizarOperacao(this)" />
+      </td>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="5" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="6" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="-" onclick="atualizarOperacao(this)" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="2" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="3" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="+" onclick="atualizarOperacao(this)" />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="C" onclick="limparDisplay()" /></td>
+        <td>
+          <input type="button" value="0" onclick="atualizarDisplay(this)" />
+        </td>
+        <td>
+          <input type="button" value="=" onclick="calcularOperacao()" />
+        </td>
+        <td>
+          <input type="button" value="/" onclick="atualizarOperacao(this)" />
+        </td>
+      </tr>
+    </table>
+    <script src="./calc.js"></script>
+  </body>
+</html>
